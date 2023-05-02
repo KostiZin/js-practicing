@@ -131,15 +131,61 @@
 // }
 
 // 1. var
-let array = [1, 2, 3, 4, 5];
-let value = 3;
-// let includedNumber = includedNumber.b;
-// 2. cycle
-for (const i of array) {
-	// includedNumber = i;
-	// 3. if includes
-	if (value === i) {
-		console.log(true);
-	}
+// let array = [1, 2, 3, 4, 5];
+// let value = 3;
+// // let includedNumber = includedNumber.b;
+// // 2. cycle
+// for (const i of array) {
+// 	// includedNumber = i;
+// 	// 3. if includes
+// 	if (value === i) {
+// 		console.log(true);
+// 	}
+// }
+// console.log(i);
+
+// Count the sum of the purchase
+
+// const cart = [54, 28, 105, 70, 92, 17, 120];
+
+// FOR
+
+// let total = 0;
+// 1. check all the values from the massive
+// for (let i = 0; i < cart.length; i += 1) {
+// console.log(cart[i]);
+
+// 	total += cart[i];
+// }
+// console.log(total);
+// 2. sum up all the values from the massive
+
+// FOR...OF
+
+// for (const sum of cart) {
+// 	total += sum;
+// }
+
+// console.log(`Total: `, total);
+
+// Add 20% of tax
+const cart = [54, 28, 105, 70, 92, 17, 120];
+
+let newCart = [];
+for (let i = 0; i < cart.length; i += 1) {
+	// console.log(cart[i]);
+	newCart = Math.round(cart[i] * 1.1);
+	// console.log(`Tax: `, tax);
+
+	// total = newCart;
+	console.log(`Total + tax: `, newCart);
 }
-console.log(i);
+
+// OR
+// const cart = [54, 28, 105, 70, 92, 17, 120];
+
+// for (let i = 0; i < cart.length; i += 1) {
+// 	// console.log(cart[i]);
+// 	cart[i] = Math.round(cart[i] * 1.1);
+// }
+// console.log(`Total + tax: `, cart);
