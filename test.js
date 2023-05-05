@@ -169,17 +169,17 @@
 // console.log(`Total: `, total);
 
 // Add 20% of tax
-const cart = [54, 28, 105, 70, 92, 17, 120];
+// const cart = [54, 28, 105, 70, 92, 17, 120];
 
-let newCart = [];
-for (let i = 0; i < cart.length; i += 1) {
-	// console.log(cart[i]);
-	newCart = Math.round(cart[i] * 1.1);
-	// console.log(`Tax: `, tax);
+// let newCart = [];
+// for (let i = 0; i < cart.length; i += 1) {
+// 	// console.log(cart[i]);
+// 	newCart = Math.round(cart[i] * 1.1);
+// 	// console.log(`Tax: `, tax);
 
-	// total = newCart;
-	console.log(`Total + tax: `, newCart);
-}
+// 	// total = newCart;
+// 	console.log(`Total + tax: `, newCart);
+// }
 
 // OR
 // const cart = [54, 28, 105, 70, 92, 17, 120];
@@ -189,3 +189,72 @@ for (let i = 0; i < cart.length; i += 1) {
 // 	cart[i] = Math.round(cart[i] * 1.1);
 // }
 // console.log(`Total + tax: `, cart);
+
+// Write function calculateTotalPrice(items) that takes th emassive of prices and returns the sum
+
+// const cart = [54, 28, 105, 70, 92, 17, 120, 12, 25, 90];
+
+// let total = 0;
+
+// for (const value of cart) {
+// 	total += value;
+// }
+
+// console.log(`Total: `, total);
+
+// const calculateTotalPrice = function (items) {
+// 	console.log(`items inside the function: `, items);
+
+// 	let total = 0;
+
+// 	for (const item of items) {
+// 		total += item;
+// 	}
+// 	return total;
+// };
+
+// console.log(calculateTotalPrice([1, 2, 3]));
+// console.log(calculateTotalPrice([5, 10, 15, 20]));
+// console.log(calculateTotalPrice([100, 200, 300]));
+
+// TASK
+
+// write func logItems(items) for checking and login a massive (not return)
+
+//TASK X
+
+// Psevdomasyv arguments
+
+// Jak zrobic masyw z psevdomasywa: OLD method
+
+// const fn = function () {
+// 	console.log(arguments);
+
+// 	const args = Array.from(arguments);
+// 	console.log(args);
+// };
+
+// fn(1, 2, 3);
+// fn(1, 2, 3, 4, 5);
+// fn(1, 2, 3, 4, 5, 6, 7);
+
+// Jak zrobic masyw z psevdomasywa: NEW method
+
+// const fn = function (...args) {
+// 	console.log(args);
+// };
+
+// fn(1, 2, 3);
+// fn(1, 2, 3, 4, 5);
+// fn(1, 2, 3, 4, 5, 6, 7);
+
+// we add ...rest ONLY at the end
+
+// const fn = function (a, b, c, ...args) {
+// 	console.log(`${a} ${b} ${c}`);
+// 	console.log(args);
+// };
+
+// fn(1, 2, 3);
+// fn(1, 2, 3, 4, 5);
+// fn(1, 2, 3, 4, 5, 6, 7);
