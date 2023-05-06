@@ -258,3 +258,41 @@
 // fn(1, 2, 3);
 // fn(1, 2, 3, 4, 5);
 // fn(1, 2, 3, 4, 5, 6, 7);
+
+
+// TASK
+
+// const feedback = {
+//     good: 5,
+//     neutral: 10,
+//     bad: 3,
+// }
+
+// const something = Object.keys(feedback);
+
+// console.log(something);
+
+// MASYW OBJEKTOW
+
+// const friends = [
+//     {name: `Mango`, online: false},
+//     {name: `Kiwi`, online: true},
+//     {name: `Poly`, online: true},
+// ];
+
+// console.table(friends);
+
+// for (friend of friends) {
+//     // console.log(friend);
+
+//     console.log(friend.name);
+
+//     // jesli chcesz zobaczyc osobne dane w pewnym kluczu (w tym przypadku zobaczymy dane z klucza name)
+
+//     friend.something = 100;
+//     // kiedy mamy object w masywie to za pomoca for...of MOZEMY zmieniac dane w objekcie. BO kiedy for...of przeglada objeckty to on daje nam link, a nie osobny number
+
+    
+// }
+// console.table(friends);
+ 
