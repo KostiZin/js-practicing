@@ -295,4 +295,223 @@
     
 // }
 // console.table(friends);
+
+// TASK
+
+//   const apartment = {
+//     descr: "Spacious apartment in the city center",
+//     rating: 4,
+//     price: 2153,
+//   };
+
+//   const keys = [];
+//   const values = [];
+
+// for (const key in apartment) {
+//    keys.push(key);
+// values.push(apartment[key]);
+    
+// }
+// console.log(keys);
+// console.log(values);
+
+
+
+// TASK
+
+
+// function countProps(object) {
+//     let propCount = 0;
+//     // Change code below this line
+//   for (const keys in object) {
+
+//    console.log(keys);
+    
+//   }
+//     // Change code above this line
+//     console.log(propCount);
+//   }
+
+
+//   let object = { mail: 'poly@mail.com', isOnline: true, score: 500 };
+// let total = 0;
+// let keys = [];
+
+//   for (const key in object) {
+// // keys.push(key);
+// // total = keys.length;
+// total =
+
+//   }
+//   console.log(keys);
+//   console.log(total);
+
+
+//   console.log(object);
+  
+
+
+// TASK
+
+// const apartment = {
+//     descr: "Spacious apartment in the city center",
+//     rating: 4,
+//     price: 2153,
+//   };
+//   const values = [];
+//   // Change code below this line
+//   const keys = Object.keys(apartment);
+
+//   console.log(keys);
+  
+//   for (const key of keys) {
+//     // Ключ
+//     console.log(key);
+//     // Значення властивості
+//     values.push(apartment[key]);
+//     console.log(values);
+//   }
+
+//   const book = {
+//     author: "Bernard Cornwell",
+//     genres: ["historical prose", "adventure"],
+//     rating: 8.38,
+//   };
+//   const keys = Object.keys(book);
+  
+//   for (const key of keys) {
+//     // Ключ
+//     console.log(key);
+//     // Значення властивості
+//     console.log(book[key]);
+//   }
+
+
+// TASK
+// let object = { mail: 'poly@mail.com', isOnline: true, score: 500 };
+
+//     let propCount = 0;
+  
+//     const keys = Object.keys(object);
+
+//     propCount = keys.length;
  
+  
+//     console.log(propCount);
+//     // Change code above this line
+  
+
+//  TASK
+
+// const colors = [
+//     { hex: "#f44336", rgb: "244,67,54" },
+//     { hex: "#2196f3", rgb: "33,150,243" },
+//     { hex: "#4caf50", rgb: "76,175,80" },
+//     { hex: "#ffeb3b", rgb: "255,235,59" },
+//   ];
+  
+  
+//   const hexColors = [];
+//   const rgbColors = [];
+
+//   for (const color of colors) {
+//     console.log(color.hex);
+
+//     hexColors.push(color.hex);
+//     rgbColors.push(color.rgb);
+      
+//   }
+//   console.log(hexColors);
+//   console.log(rgbColors);
+
+
+
+// TASK
+
+//   const products = [
+//     { name: "Radar", price: 1300, quantity: 4 },
+//     { name: "Scanner", price: 2700, quantity: 3 },
+//     { name: "Droid", price: 400, quantity: 7 },
+//     { name: "Grip", price: 1200, quantity: 9 },
+//   ];
+  
+//   function getProductPrice(productName) {
+//     // Change code below this line
+// //   let price = 0;
+  
+//     for (const product of products) {
+//       console.log(product);
+    
+//       if (productName === product.name) {
+//           return product.price;
+//     //   } else {
+//     //     // return product.price;
+//     //   }
+    
+//     };
+    
+//     // return price;
+//     // Change code above this line
+//   }
+//   return null;
+// }
+   
+  
+  
+//  console.log(getProductPrice('Scanner'));
+  
+
+
+// TASK
+
+// const products = [
+//     { name: "Radar", price: 1300, quantity: 4 },
+//     { name: "Scanner", price: 2700, quantity: 3 },
+//     { name: "Droid", price: 400, quantity: 7 },
+//     { name: "Grip", price: 1200, quantity: 9 },
+//   ];
+  
+//   function getAllPropValues(propName) {
+    
+//     let values = [];
+
+//     for (const product of products) {
+        
+//         if (product[propName]) {
+//         values.push(product[propName]);
+//     }
+        
+//     }
+//     return values;
+//   }   
+
+//     // Change code above this line
+  
+
+
+//   console.log(getAllPropValues("name"));
+
+// TASK
+
+// const products = [
+//     { name: "Radar", price: 1300, quantity: 4 },
+//     { name: "Scanner", price: 2700, quantity: 3 },
+//     { name: "Droid", price: 400, quantity: 7 },
+//     { name: "Grip", price: 1200, quantity: 9 },
+//   ];
+  
+//   function calculateTotalPrice(productName) {
+//     // Change code below this line
+//   let totalPrice = 0;
+
+//   for (product of products) {
+// if (productName === product.name) {
+//     totalPrice = product.price * product.quantity;
+// }
+//   }
+  
+//   return totalPrice;
+//     // Change code above this line
+//   }
+
+//   console.log(calculateTotalPrice("Radar"));
