@@ -117,8 +117,7 @@
 
 // console.log(cards);
 
-
-// OBJECTS
+// OBJECTS =================================================
 // const apartment = {
 //     imgUrl: "https://via.placeholder.com/640x480",
 //     descr: "Spacious apartment in the city center",
@@ -131,15 +130,230 @@
 //       email: "henry.carter@aptmail.com",
 //     },
 //   };
-  
-  
+
 //   apartment.area = 60;
 //   apartment.rooms = 3;
-  
+
 //   apartment.location = {}
 //   apartment.location.city = "Kingston";
 // apartment.location.country = "Peru";
 
-
 //   console.log(apartment);
 
+// TASK =================================================
+
+// const scores = [89, 64, 42, 17, 93, 51, 26];
+// // Change code below this line
+// const bestScore = Math.max(...scores);
+// const worstScore = Math.min(...scores);
+
+// console.log(bestScore);
+// console.log(worstScore);
+
+// TASK ===============================================
+
+// const firstGroupScores = [64, 42, 93];
+// const secondGroupScores = [89, 14, 51, 26];
+// const thirdGroupScores = [29, 47, 18, 97, 81];
+// // Change code below this line
+// const allScores = [...firstGroupScores, ...secondGroupScores, ...thirdGroupScores];
+// const bestScore = Math.max(...allScores);
+// const worstScore = Math.min(...allScores);
+
+// console.log(allScores);
+// console.log(bestScore);
+// console.log(worstScore);
+
+// TASK ================================================
+
+// const defaultSettings = {
+// 	theme: "light",
+// 	public: true,
+// 	withPassword: false,
+// 	minNumberOfQuestions: 10,
+// 	timePerQuestion: 60,
+// };
+// const overrideSettings = {
+// 	public: false,
+// 	withPassword: true,
+// 	timePerQuestion: 30,
+// };
+// // Change code below this line
+// const finalSettings = { ...defaultSettings, ...overrideSettings };
+
+// console.log(finalSettings);
+
+// TASK =============================================
+
+// function makeTask(data) {
+// 	const completed = false;
+// 	const category = "General";
+// 	const priority = "Normal";
+// 	// Change code below this line
+
+// 	let group = {
+// 		completed,
+// 		category,
+// 		priority,
+// 	};
+// 	const finalObject = { ...group, ...data };
+// 	return finalObject;
+// 	// Change code above this line
+// }
+
+// console.log(makeTask({ text: "Buy bread" }));
+// console.log(makeTask({}));
+// console.log(makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" }));
+// console.log(makeTask({ priority: "Low", text: "Choose shampoo" }));
+
+// TASK =================================================
+
+// Change code below this line
+// function add(...args) {
+// 	// console.log(rest);
+// 	let total = 0;
+
+// 	for (const number of args) {
+// 		total += number;
+// 	}
+
+// 	return total;
+// 	// Change code above this line
+// }
+
+// console.log(add(32, 6, 13, 19, 8));
+
+// TASK ==========================================
+
+// function addOverNum(firstNumber, ...args) {
+// 	let total = 0;
+
+// 	for (const arg of args) {
+// 		if (firstNumber < arg) {
+// 			total += arg;
+// 		}
+// 	}
+
+// 	return total;
+// 	// Change code above this line
+// }
+
+// console.log(addOverNum(20, 74, 11, 62, 46, 12, 36));
+
+// TASK ==============================================
+
+// function findMatches(firstData, ...args) {
+// 	// console.log(args);
+// 	// console.log(firstData);
+
+// 	const matches = []; // Don't change this line
+// 	for (const arg of args) {
+// 		console.log(arg);
+// 		if (firstData.includes(arg)) {
+// 			matches.push(arg);
+// 		}
+// 	}
+
+// 	// Change code above this line
+// 	return matches;
+// }
+// console.log(findMatches([1, 2, 3, 4, 5, 7], 1, 8, 2, 7, 458));
+
+// TASK =================================================
+// const bookShelf = {
+// 	// Change code below this line
+// 	books: ["The last kingdom", "The guardian of dreams"],
+// 	getBooks() {
+// 		return "Returning all books";
+// 	},
+// 	addBook(bookName) {
+// 		return `Adding book ${bookName}`;
+// 	},
+// 	removeBook(bookName) {
+// 		return `Deleting book ${bookName}`;
+// 	},
+// 	updateBook(oldName, newName) {
+// 		return `Updating book ${oldName} to ${newName}`;
+// 	},
+
+// 	// Change code above this line
+// };
+// console.log(bookShelf.removeBook("Red sunset"));
+
+// TASK =========================================
+
+// const bookShelf = {
+// 	books: ["The last kingdom", "Haze", "The guardian of dreams"],
+// 	updateBook(oldName, newName) {
+// 		// Change code below this line
+// 		let indexOfName = this.books.indexOf(oldName);
+// 		// console.log(indexOfName);
+
+// 		this.books.splice(indexOfName, 1, newName);
+// 		return this.books;
+
+// 		// Change code above this line
+// 	},
+// };
+
+// console.log(bookShelf.updateBook("The last kingdom", "Dune"));
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// fruits.splice(2, 1, "Lemon", "Kiwi");
+// console.log(fruits);
+
+// TASK ==========================================
+
+const atTheOldToad = {
+	potions: [
+		{ name: "Speed potion", price: 460 },
+		{ name: "Dragon breath", price: 780 },
+		{ name: "Stone skin", price: 520 },
+	],
+
+	// 	addPotion(newPotion) {
+	// 		for (let potion of this.potions) {
+	// 						if (potion.name === newPotion.name) {
+	// 				return "Error! Potion " + newPotion.name + " is already in your inventory!";
+	// 			}
+	// 		}
+	// 		this.potions.push(newPotion);
+	// 	},
+	// };
+
+// 	removePotion(potionName) {
+// 		for (let potion of this.potions.name) {
+// 			console.log(potion);
+// 			let indexPotion = this.potion.name.indexOf(potionName.name);
+// 			console.log(indexPotion);
+// 		}
+// 	},
+// };
+// 	const potionIndex = this.potions.indexOf(potionName);
+
+// 	if (potionIndex === -1) {
+// 		return `Potion ${potionName} is not in inventory!`;
+// 	}
+
+// 	this.potions.splice(potionIndex, 1);
+// },
+// 	updatePotionName(oldName, newName) {
+// 		const potionIndex = this.potions.indexOf(oldName);
+
+// 		if (potionIndex === -1) {
+// 			return `Potion ${oldName} is not in inventory!`;
+// 		}
+
+// 		this.potions.splice(potionIndex, 1, newName);
+// 	},
+// 	// Change code above this line
+
+// console.log(atTheOldToad.getPotions());
+// console.log(atTheOldToad.addPotion({ name: "Invisibility", price: 620 }));
+// console.log(atTheOldToad.addPotion({ name: "Power potion", price: 270 }));
+// console.log(atTheOldToad.addPotion({ name: "Dragon breath", price: 700 }));
+// console.log(atTheOldToad.addPotion({ name: "Stone skin", price: 240 }));
+// console.log(atTheOldToad.removePotion("Dragon breath"));
+// console.log(atTheOldToad.removePotion("Speed potion"));
+// console.log(atTheOldToad.updatePotionName("Dragon breath", "Polymorth"));
+// console.log(atTheOldToad.updatePotionName("Stone skin", "Invulnerability potion"));
