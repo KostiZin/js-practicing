@@ -189,47 +189,280 @@
 // console.log(calculateTotalPrice([12, 85, 37, 4]));
 
 // TASK ==============================================
-const changeEven = (numbers, value) => {
-	// Change code below this line
-	let newArray = [];
-	let newNumber = [...numbers];
-	// console.log(`new number`, newNumber);
+// const changeEven = (numbers, value) => {
+// 	// Change code below this line
+// 	let newArray = [];
+// 	let newNumber = [...numbers];
+// 	// console.log(`new number`, newNumber);
 
-	
-	newNumber.forEach(item => {
-		if (item % 2 === 0) {
-			item = item + value;
-		} 
-		newArray.push(item);
-		// console.log(`new array`, newArray);
-		
-	});
-	return newArray;
-	
+// 	newNumber.forEach(item => {
+// 		if (item % 2 === 0) {
+// 			item = item + value;
+// 		}
+// 		newArray.push(item);
+// 		// console.log(`new array`, newArray);
 
-	// for (let i = 0; i < numbers.length; i += 1) {
-	// 	if (numbers[i] % 2 === 0) {
-	// 		numbers[i] = numbers[i] + value;
-	// 		console.log(numbers[i]);
-	// 	}
-	// 	newArray.push(numbers[i]);
-	// }
-};
-	
-	
-	// Change code above this line
+// 	});
+// 	return newArray;
 
+// };
 
+// Change code above this line
 
-console.log(changeEven([2, 8, 3, 7, 4, 6], 10));
-console.log(changeEven([44, 13, 81, 92, 36, 54], 100));
+// console.log(changeEven([2, 8, 3, 7, 4, 6], 10));
+// console.log(changeEven([44, 13, 81, 92, 36, 54], 100));
 
+// TASK ==============================================
+// const planets = ["Earth", "Mars", "Venus", "Jupiter"];
+
+// const planetsLengths = planets.map(item => item.length);
+
+// console.log(planetsLengths);
+// TASK ==============================================
+// const books = [
+// 	{
+// 		title: "The Last Kingdom",
+// 		author: "Bernard Cornwell",
+// 		rating: 8.38,
+// 	},
+// 	{
+// 		title: "Beside Still Waters",
+// 		author: "Robert Sheckley",
+// 		rating: 8.51,
+// 	},
+// 	{
+// 		title: "The Dream of a Ridiculous Man",
+// 		author: "Fyodor Dostoevsky",
+// 		rating: 7.75,
+// 	},
+// 	{ title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+// 	{ title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
+// ];
+// // Change code below this line
+
+// const titles = books.map(item => item.title);
+
+// console.log(titles);
+// TASK ==============================================
+// const users = [
+// 	{
+// 		name: "Moore Hensley",
+// 		email: "moorehensley@indexia.com",
+// 		eyeColor: "blue",
+// 		friends: ["Sharron Pace"],
+// 		isActive: false,
+// 		balance: 2811,
+// 		skills: ["ipsum", "lorem"],
+// 		gender: "male",
+// 		age: 37,
+// 	},
+// 	{
+// 		name: "Sharlene Bush",
+// 		email: "sharlenebush@tubesys.com",
+// 		eyeColor: "blue",
+// 		friends: ["Briana Decker", "Sharron Pace"],
+// 		isActive: true,
+// 		balance: 3821,
+// 		skills: ["tempor", "mollit", "commodo", "veniam", "laborum"],
+// 		gender: "female",
+// 		age: 34,
+// 	},
+// ];
+
+// const getUserNames = users.map(item => item.email);
+
+// console.log(getUserNames);
+// TASK ==============================================
+// const numbers = [17, 24, 82, 61, 36, 18, 47, 52, 73];
+// // Change code below this line
+
+// const evenNumbers = numbers.filter(item => !(item % 2));
+// const oddNumbers = numbers.filter(item => item % 2);
+
+// console.log(evenNumbers);
+// console.log(oddNumbers);
+// TASK ==============================================
+// const books = [
+// 	{
+// 		title: "The Last Kingdom",
+// 		author: "Bernard Cornwell",
+// 		genres: ["adventure", "history"],
+// 	},
+// 	{
+// 		title: "Beside Still Waters",
+// 		author: "Robert Sheckley",
+// 		genres: ["fiction", "mysticism"],
+// 	},
+// 	{
+// 		title: "Redder Than Blood",
+// 		author: "Tanith Lee",
+// 		genres: ["horror", "mysticism", "adventure"],
+// 	},
+// ];
+// // Change code below this line
+// const allGenres = books.flatMap(book => book.genres);
+// const uniqueGenres = allGenres.filter((genre, index, array) => array.indexOf(genre) === index);
+
+// console.log(allGenres);
+// console.log(uniqueGenres);
+// TASK ==============================================
+// const books = [
+// 	{
+// 		title: "The Last Kingdom",
+// 		author: "Bernard Cornwell",
+// 		rating: 8.38,
+// 	},
+// 	{
+// 		title: "Beside Still Waters",
+// 		author: "Robert Sheckley",
+// 		rating: 8.51,
+// 	},
+// 	{
+// 		title: "The Dream of a Ridiculous Man",
+// 		author: "Fyodor Dostoevsky",
+// 		rating: 7.75,
+// 	},
+// 	{ title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+// 	{ title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
+// ];
+
+// const MIN_RATING = 8;
+// const AUTHOR = "Bernard Cornwell";
+// // Change code below this line
+
+// const topRatedBooks = books.filter(({ rating }) => rating >= MIN_RATING);
+// const booksByAuthor = books.filter(({ author }) => author === AUTHOR);
+
+// console.log(topRatedBooks);
+// console.log(booksByAuthor);
+// TASK ==============================================
+// const users = [
+// 	{
+// 		name: "Moore Hensley",
+// 		email: "moorehensley@indexia.com",
+// 		eyeColor: "blue",
+// 		friends: ["Sharron Pace"],
+// 		isActive: false,
+// 		balance: 2811,
+// 		gender: "male",
+// 		age: 37,
+// 	},
+// 	{
+// 		name: "Sharlene Bush",
+// 		email: "sharlenebush@tubesys.com",
+// 		eyeColor: "blue",
+// 		friends: ["Briana Decker", "Sharron Pace"],
+// 		isActive: true,
+// 		balance: 3821,
+// 		gender: "female",
+// 		age: 34,
+// 	},
+// ];
+// // const allFriends = users.flatMap(item => item.friends);
+// const getFriends = users
+// 	.flatMap(item => item.friends)
+// 	.filter((friend, index, array) => array.indexOf(friend) === index);
+
+// console.log(getFriends);
+// TASK ==============================================
+// const users = [
+// 	{
+// 		name: "Moore Hensley",
+// 		email: "moorehensley@indexia.com",
+// 		eyeColor: "blue",
+// 		friends: ["Sharron Pace"],
+// 		isActive: false,
+// 		balance: 2811,
+// 		gender: "male",
+// 		age: 37,
+// 	},
+// 	{
+// 		name: "Sharlene Bush",
+// 		email: "sharlenebush@tubesys.com",
+// 		eyeColor: "blue",
+// 		friends: ["Briana Decker", "Sharron Pace"],
+// 		isActive: true,
+// 		balance: 3821,
+// 		gender: "female",
+// 		age: 34,
+// 	},
+// ];
+
+// const getActiveUsers = users.filter(({ isActive }) => isActive);
+
+// console.log(getActiveUsers);
 // TASK ==============================================
 
 // TASK ==============================================
 
 // TASK ==============================================
 
+// TASK ==============================================
+
+// TASK ==============================================
+// TASK ==============================================
+
+// TASK ==============================================
+
+// TASK ==============================================
+
+// TASK ==============================================
+
+// TASK ==============================================
+// TASK ==============================================
+
+// TASK ==============================================
+
+// TASK ==============================================
+
+// TASK ==============================================
+
+// TASK ==============================================
+// TASK ==============================================
+
+// TASK ==============================================
+
+// TASK ==============================================
+
+// TASK ==============================================
+
+// TASK ==============================================
+// TASK ==============================================
+
+// TASK ==============================================
+
+// TASK ==============================================
+
+// TASK ==============================================
+
+// TASK ==============================================
+// TASK ==============================================
+
+// TASK ==============================================
+
+// TASK ==============================================
+
+// TASK ==============================================
+
+// TASK ==============================================
+// TASK ==============================================
+
+// TASK ==============================================
+
+// TASK ==============================================
+
+// TASK ==============================================
+
+// TASK ==============================================
+// TASK ==============================================
+
+// TASK ==============================================
+
+// TASK ==============================================
+
+// TASK ==============================================
+
+// TASK ==============================================
 // TASK ==============================================
 
 // TASK ==============================================
