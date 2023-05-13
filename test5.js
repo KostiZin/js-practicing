@@ -192,17 +192,34 @@
 const changeEven = (numbers, value) => {
 	// Change code below this line
 	let newArray = [];
+	let newNumber = [...numbers];
+	// console.log(`new number`, newNumber);
 
-	for (let i = 0; i < numbers.length; i += 1) {
-		if (numbers[i] % 2 === 0) {
-			numbers[i] = numbers[i] + value;
-		}
-		newArray.push(numbers[i]);
-	}
-	console.log(numbers);
+	
+	newNumber.forEach(item => {
+		if (item % 2 === 0) {
+			item = item + value;
+		} 
+		newArray.push(item);
+		// console.log(`new array`, newArray);
+		
+	});
 	return newArray;
-	// Change code above this line
+	
+
+	// for (let i = 0; i < numbers.length; i += 1) {
+	// 	if (numbers[i] % 2 === 0) {
+	// 		numbers[i] = numbers[i] + value;
+	// 		console.log(numbers[i]);
+	// 	}
+	// 	newArray.push(numbers[i]);
+	// }
 };
+	
+	
+	// Change code above this line
+
+
 
 console.log(changeEven([2, 8, 3, 7, 4, 6], 10));
 console.log(changeEven([44, 13, 81, 92, 36, 54], 100));
