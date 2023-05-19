@@ -886,22 +886,333 @@
 // console.log(historyService.getOrdersByEmail("artemis@coldmail.net"));
 
 // TASK ==============================================
-// TASK ==============================================
+
+// class Storage {
+// 	constructor(items) {
+// 		this.items = items;
+// 	}
+// 	getItems() {
+// 		return this.items;
+// 	}
+// 	addItem(newItem) {
+// 		return this.items.push(newItem);
+// 	}
+// 	removeItem(itemToRemove) {
+// 		const index = this.items.indexOf(itemToRemove);
+
+// 		return this.items.splice(index, 1);
+// 	}
+// }
+
+// // Change code above this line
+// const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+// storage.addItem("Droid");
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
+// storage.removeItem("Prolonger");
+// console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
 
 // TASK ==============================================
 
+// Change code above this line
+
+// class StringBuilder {
+// 	constructor(initialValue) {
+// 		this.value = initialValue;
+// 	}
+
+// 	getValue() {
+// 		return this.value;
+// 	}
+
+// 	padStart(str) {
+// 		this.value = str + this.value;
+// 		return this.value;
+// 	}
+
+// 	padEnd(str) {
+// 		return (this.value += str);
+// 	}
+
+// 	padBoth(str) {
+// 		this.value = str + this.value + str;
+// 		return this.value;
+// 	}
+// }
+
+// const builder = new StringBuilder(".");
+// console.log(builder.getValue()); // "."
+
+// builder.padStart("^");
+// console.log(builder.getValue()); // "^."
+// builder.padEnd("^");
+// console.log(builder.getValue()); // "^.^"
+// builder.padBoth("=");
+// console.log(builder.getValue()); // "=^.^="
+
 // TASK ==============================================
+// class Car {
+// 	// Change code below this line
+// 	#brand;
+// 	constructor({ brand, model, price }) {
+// 		this.#brand = brand;
+// 		this.model = model;
+// 		this.price = price;
+// 	}
+
+// 	getBrand() {
+// 		return this.#brand;
+// 	}
+
+// 	changeBrand(newBrand) {
+// 		return (this.#brand = newBrand);
+// 	}
+
+// 	// Change code above this line
+// }
+// TASK ==============================================
+// class Storage {
+// 	// Change code below this line
+// 	#items;
+// 	constructor(items) {
+// 		this.#items = items;
+// 	}
+
+// 	getItems() {
+// 		return this.#items;
+// 	}
+
+// 	addItem(newItem) {
+// 		this.#items.push(newItem);
+// 	}
+
+// 	removeItem(itemToRemove) {
+// 		this.#items = this.#items.filter(item => item !== itemToRemove);
+// 	}
+// }
+
+// // Change code above this line
+// const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+// storage.addItem("Droid");
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
+// storage.removeItem("Prolonger");
+// console.log(storage.getItems()); // ["Нанитоиды", "Антигравитатор", "Droid"]
+// TASK ==============================================
+// class StringBuilder {
+// 	// Change code below this line
+// 	#value;
+// 	constructor(initialValue) {
+// 		this.#value = initialValue;
+// 	}
+
+// 	getValue() {
+// 		return this.#value;
+// 	}
+
+// 	padEnd(str) {
+// 		this.#value += str;
+// 	}
+
+// 	padStart(str) {
+// 		this.#value = str + this.#value;
+// 	}
+
+// 	padBoth(str) {
+// 		this.padStart(str);
+// 		this.padEnd(str);
+// 	}
+// }
+
+// // Change code above this line
+// const builder = new StringBuilder(".");
+// console.log(builder.getValue()); // "."
+// builder.padStart("^");
+// console.log(builder.getValue()); // "^."
+// builder.padEnd("^");
+// console.log(builder.getValue()); // "^.^"
+// builder.padBoth("=");
+// console.log(builder.getValue()); // "=^.^="
+// TASK ==============================================
+
+// class Car {
+// 	// Change code below this line
+// 	static MAX_PRICE = 50000;
+// 	#price;
+
+// 	constructor({ price }) {
+// 		this.#price = price;
+// 	}
+
+// 	get price() {
+// 		return this.#price;
+// 	}
+
+// 	set price(newPrice) {
+// 		if (newPrice > Car.MAX_PRICE) {
+// 			return this.#price;
+// 		} else {
+// 			this.#price = newPrice;
+// 		}
+// 	}
+// 	// Change code above this line
+// }
+
+// const audi = new Car({ price: 35000 });
+// console.log(audi.price); // 35000
+
+// audi.price = 49000;
+// console.log(audi.price); // 49000
+
+// audi.price = 51000;
+// console.log(audi.price); // 49000
+// TASK ==============================================
+// class Car {
+// 	static #MAX_PRICE = 50000;
+// 	// Change code below this line
+// 	static checkPrice(price) {
+// 		if (price > Car.#MAX_PRICE) {
+// 			return "Error! Price exceeds the maximum";
+// 		} else {
+// 			return "Success! Price is within acceptable limits";
+// 		}
+// 	}
+
+// 	// Change code above this line
+// 	constructor({ price }) {
+// 		this.price = price;
+// 	}
+// }
+
+// const audi = new Car({ price: 36000 });
+// const bmw = new Car({ price: 64000 });
+
+// console.log(Car.checkPrice(audi.price)); // "Success! Price is within acceptable limits"
+// console.log(Car.checkPrice(bmw.price)); // "Error! Price exceeds the maximum"
 
 // TASK ==============================================
 
-// TASK ==============================================
-// TASK ==============================================
+// class User {
+// 	constructor(email) {
+// 		this.email = email;
+// 	}
+
+// 	get email() {
+// 		return this.email;
+// 	}
+
+// 	set email(newEmail) {
+// 		this.email = newEmail;
+// 	}
+// }
+// // Change code below this line
+// class Admin extends User {
+// 	static AccessLevel = {
+// 		BASIC: "basic",
+// 		SUPERUSER: "superuser",
+// 	};
+// }
+
+// console.log(Admin.AccessLevel.BASIC);
 
 // TASK ==============================================
 
-// TASK ==============================================
+// class User {
+// 	email;
+
+// 	constructor(email) {
+// 		this.email = email;
+// 	}
+
+// 	get email() {
+// 		return this.email;
+// 	}
+
+// 	set email(newEmail) {
+// 		this.email = newEmail;
+// 	}
+// }
+
+// class Admin extends User {
+// 	// Change code below this line
+
+// 	static AccessLevel = {
+// 		BASIC: "basic",
+// 		SUPERUSER: "superuser",
+// 	};
+
+// 	constructor({ email, accessLevel }) {
+// 		super(email);
+// 		this.accessLevel = accessLevel;
+// 	}
+
+// 	// Change code above this line
+// }
+
+// const mango = new Admin({
+// 	email: "mango@mail.com",
+// 	accessLevel: Admin.AccessLevel.SUPERUSER,
+// });
+
+// console.log(mango.email); // "mango@mail.com"
+// console.log(mango.accessLevel); // "superuser"
+// console.log(Admin.AccessLevel.BASIC);
 
 // TASK ==============================================
+
+// class User {
+// 	email;
+
+// 	constructor(email) {
+// 		this.email = email;
+// 	}
+
+// 	get email() {
+// 		return this.email;
+// 	}
+
+// 	set email(newEmail) {
+// 		this.email = newEmail;
+// 	}
+// }
+// class Admin extends User {
+// 	// Change code below this line
+// 	// +++++++++++++++++++++++++++++++++++++++++++++++++
+// 	static AccessLevel = {
+// 		BASIC: "basic",
+// 		SUPERUSER: "superuser",
+// 	};
+
+// 	constructor({ email, accessLevel }) {
+// 		super(email);
+// 		this.accessLevel = accessLevel;
+// 	}
+
+// 	blacklistedEmails = [];
+
+// 	blacklist(email) {
+// 		return this.blacklistedEmails.push(email);
+// 	}
+
+// 	isBlacklisted(email) {
+// 		return this.blacklistedEmails.includes(email);
+// 	}
+	// +++++++++++++++++++++++++++++++++++++++++++++++++
+	// Change code above this line
+}
+
+const mango = new Admin({
+	email: "mango@mail.com",
+	accessLevel: Admin.AccessLevel.SUPERUSER,
+});
+
+console.log(mango.email); // "mango@mail.com"
+console.log(mango.accessLevel); // "superuser"
+
+mango.blacklist("poly@mail.com");
+console.log(mango.blacklistedEmails); // ["poly@mail.com"]
+console.log(mango.isBlacklisted("mango@mail.com")); // false
+console.log(mango.isBlacklisted("poly@mail.com")); // true
 
 // TASK ==============================================
 // TASK ==============================================
